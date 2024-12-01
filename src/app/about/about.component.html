@@ -1,0 +1,39 @@
+<div class="main" id="aboutsection">
+    <div class="about">
+       
+        <div class="about-img">
+            <div class="about-img-box">
+                
+                   <img class="Developer-img" src="/assets/siva.jpg">
+        
+                
+            </div>
+    
+        </div> 
+        <div class="content">
+            <h3>About me</h3>
+            <br/>
+            <p class="m-2 Intro-para"> 
+                Hi, I’m Sivakumar. I specialize in creating dynamic and responsive web applications that not only meet client requirements but also ensure user satisfaction.</p>
+             <div class="tab-titles ">
+                <p class="tab-links about-active" (click)="aboutCategorySelection($event,1)">Skills</p>
+                <p class="tab-links" (click)="aboutCategorySelection($event,2)">Experience</p>
+                <p class="tab-links" (click)="aboutCategorySelection($event,3)">Education</p>
+             </div>
+
+             <div class="content-list">
+                 <div class="skills" *ngIf="skills">
+                    I have over two years of experience with the Angular framework at Revolution Games India Private Limited.
+                 </div>
+                 <div class="experience" *ngIf="experience">
+                    
+I have over two years of experience with the Angular framework at Revolution Games India Private Limited.
+                 </div>
+                 <div class="education" *ngIf="education">
+                    I completed my 10th grade at Sri Sankara vidhyalaya School, pursued my higher secondary education at Sri Ahobila Oriental School, and earned my undergraduate degree from Agurchand Manmull Jain College. 
+                 </div>
+             </div>
+          
+        </div> 
+       </div> 
+</div>

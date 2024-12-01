@@ -1,0 +1,25 @@
+<div class="header">
+<div class="developername">
+<span>S</span>
+<div class="name">sivakumar</div>
+
+</div>
+    <div class="navmenus" >
+        <ul  id="headermenus" >
+            <li><a href="">home</a></li>
+            <li><a href="" routerLink="" fragment="about" >About</a></li>
+            <li><a href="" routerLink="" fragment="Contact">Contact</a></li>
+        </ul>
+        <div *ngIf="fonticonenable;else other_content">
+        <div class="menu-icon" id="headericon"  (click)="enable()">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+    </div>
+        <ng-template #other_content>
+            <div class="menu-icon" id="headericon"  (click)="disable()">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+        </ng-template>
+    
+    </div>
+</div>
