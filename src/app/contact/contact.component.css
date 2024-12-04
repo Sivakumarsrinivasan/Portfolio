@@ -1,4 +1,5 @@
 .contact-page{
+    margin-top: 3%;
     height: 100vh;
 }
 
@@ -139,7 +140,7 @@ input , textarea{
 
   @media (max-width: 770px){
     .contact-page{
-        margin-top: 50%;
+        margin-top: 70%;
     }
 
     .contact-bar{
