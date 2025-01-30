@@ -4,7 +4,7 @@
         <div class="about-img">
             <div class="about-img-box">
                 
-                   <img class="Developer-img" src="/assets/siva.jpg">
+                   <img class="Developer-img" src="assets/siva.jpg">
         
                 
             </div>
@@ -19,6 +19,7 @@
                 <p class="tab-links about-active" (click)="aboutCategorySelection($event,1)">Skills</p>
                 <p class="tab-links" (click)="aboutCategorySelection($event,2)">Experience</p>
                 <p class="tab-links" (click)="aboutCategorySelection($event,3)">Education</p>
+                <p class="tab-links" (click)="aboutCategorySelection($event,4)">Projects</p>
              </div>
 
              <div class="content-list">
@@ -52,6 +53,24 @@
                         </div>
                       </div>
                     </div>
+                    <div style="margin-top: 2%;">
+                        <p>Angular</p>
+                    <div class="progress" style="width: 50%; height: 6px;">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="40"
+                        aria-valuemin="0" aria-valuemax="70" style="width:70%">
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <div style="margin-top: 2%;">
+                        <p>Git</p>
+                    <div class="progress" style="width: 50%; height: 6px;">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="30"
+                        aria-valuemin="0" aria-valuemax="70" style="width:70%">
+                          
+                        </div>
+                      </div>
+                    </div>
                  </div>
                  <div class="experience" *ngIf="experience">
                     
@@ -59,6 +78,23 @@ I have over two years of experience with the Angular framework at Revolution Gam
                  </div>
                  <div class="education" *ngIf="education">
                     I completed my 10th grade at Sri Sankara vidhyalaya School, pursued my higher secondary education at Sri Ahobila Oriental School, and earned my undergraduate degree from Agurchand Manmull Jain College. 
+                 </div>
+                 <div class="project" *ngIf="projects">
+                   <h5>Plannotate 3</h5>
+                   <ul>
+                    <li>It is a drawing based civil application, that enables user to draw ,plotting annotation , attaching forms and images to the annotations</li>
+                    <li>Main aim of this application is to draw or plot the annotation on theimages that wherever we can find the defect in the building or tunnel inthe image</li>
+                    <li>It is an US client based application, Client : WJE [Wiss Janney Elstner]</li>
+                   </ul>
+                   <h5>RG-workspace</h5>
+                   <ul>
+                    <li>It is an employee tracking based application , It helps employee to
+                        apply leaves , permission and tracks the employee’s productivity
+                        hours</li>
+                    <li>Reported person can approve the leave or permission for employees
+                        whose under to the reported person</li>
+                    
+                   </ul>
                  </div>
              </div>
           

@@ -25,21 +25,30 @@ scrollToSection() {
 skills:boolean = true;;
 experience:boolean = false;
 education:boolean = false;
+projects:boolean = false;
 
 
 aboutCategorySelection(e:Event,category:Number){
 if(category == 1){
   this.skills = true;
   this.experience = false;
-  this.education = false
+  this.education = false;
+  this.projects = false;
 }else if(category == 2){
   this.skills = false;
   this.experience = true;
-  this.education = false
-}else{
+  this.education = false;
+  this.projects = false;
+}else if(category == 3){
   this.skills = false;
   this.experience = false;
   this.education = true;
+  this.projects = false;
+}else{
+  this.skills = false;
+  this.experience = false;
+  this.education = false;
+  this.projects = true;
 }
 
 

@@ -6,9 +6,10 @@
 }
 
 .main{
-    height: 100vh;  
+    height: 80vh;  
 
 }
+
 .home{
     display: flex;
     height: 100%;
@@ -121,12 +122,26 @@ img{
     color: blanchedalmond;
 }
 
-@media (max-width: 800px) and (min-width:425px){
+.about-page{
+    margin-top: 5%;
+}
+.contact-page1{
+    margin-top: 5%;
+}
+
+@media (max-width: 800px) and (min-width:500px){
     
     .main{
-        
-        margin-top: 20%;
+        height: 100vh;
+        margin-top: 8%;
     }
+    .contact-page1{
+        margin-top: 1%;
+    }
+   .about-page{
+    margin-top: 15%;
+   }
+ 
     .home{
         flex-direction: column-reverse;
     }
@@ -167,10 +182,16 @@ img{
      }
 }
 
-@media (max-width: 450px){
+@media (max-width: 500px) {
     .main{
         
-        margin-top: 20%;
+        margin-top: 8%;
+    }
+    .about-page{
+        margin-top: 25%;
+    }
+    .contact-page1{
+        margin-top: 6%;
     }
     .home{
         flex-direction: column-reverse;
@@ -187,7 +208,7 @@ img{
     .img-box{
 
         height: 350px;
-        width: 226px;
+        width: 300px;
         border-radius: 50%;
     }
     .img-box::before{
@@ -206,7 +227,13 @@ img{
     
        .btn{
         
-        height: 17%;
-        width: 33%;
+        height: 20%;
+        width: 36%;
      }
+}
+
+@media (max-width:380px){
+   .img-box{
+    width: 210px;
+   } 
 }
