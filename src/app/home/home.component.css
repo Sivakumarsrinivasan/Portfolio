@@ -101,7 +101,7 @@ img{
     cursor: pointer;
  }
  .btn:hover{
-    background: red;
+    background: green;
  }
   
 .m-1{
@@ -207,8 +207,10 @@ img{
     }
     .img-box{
 
-        height: 350px;
-        width: 45%;
+        /* height: 350px;
+        width: 45%; */
+        height: 205px;
+        width: 50%;
         border-radius: 50%;
     }
     .img-box::before{
@@ -234,7 +236,7 @@ img{
 
 @media (max-width:380px){
    .img-box{
-    height: 75%;
+    height: 78%;
     width: 45%;
    } 
 }
