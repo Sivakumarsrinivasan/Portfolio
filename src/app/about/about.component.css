@@ -189,4 +189,27 @@ th,td{
 
 
 }
+.animx{
+    opacity: 0;
+    transform: translateX(-120px);
+    animation: moveleft 0.5s linear forwards;
+}
+ @keyframes moveleft{
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+ }
+
+ .anim-x{
+    opacity: 0;
+    transform: translateX(120px);
+    animation: moveright 0.5s linear forwards;
+}
+ @keyframes moveright{
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+ }
 

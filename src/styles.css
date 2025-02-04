@@ -5,3 +5,18 @@ body{
 .btn{
 cursor: pointer;
 }
+
+.anim{
+    opacity: 0;
+    transform: translateY(60px);
+    animation: move 0.5s linear forwards;
+}
+
+@keyframes move{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+
+    }
+}
+

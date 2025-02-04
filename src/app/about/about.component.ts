@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, HostListener, OnInit, Renderer2 } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
 
@@ -7,14 +7,32 @@ import { Subscription } from 'rxjs';
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.css']
 })
-export class AboutComponent {
+export class AboutComponent{
   fragmentSubscription!: Subscription;
-constructor(private route: ActivatedRoute){}
-
-ngOnInit(): void {
-  // Subscribe to fragment changes
-
+constructor(private route: ActivatedRoute, private renderer: Renderer2){
+  
 }
+ 
+
+ngAfterViewChecked(): void {
+  // Check the current fragment in the URL
+  const fragment = window.location.hash.replace('#', '');
+  if (fragment === 'about') {
+    const element = document.getElementById('imgsection');
+    const contentelement = document.getElementById('contentsection');
+    if (element) {
+      // Reset animation to restart it every time the fragment is reached
+      this.renderer.removeClass(element, 'animx');
+      this.renderer.removeClass(contentelement,'anim-x')
+      void element.offsetWidth;  // Forces reflow to restart animation
+      this.renderer.addClass(element, 'animx');
+      this.renderer.addClass(contentelement,'anim-x')
+
+    }
+  }
+}
+
+
 scrollToSection() {
   const element = document.getElementById('aboutsection');
   if (element) {
