@@ -69,7 +69,13 @@
     width: 100%;
     object-fit: cover;
 }
-
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+  }
+th,td{
+    padding:15px ;
+}
 .tab-titles{
     display: flex;
     margin: 15px 0 0;
