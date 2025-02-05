@@ -193,7 +193,7 @@ th,td{
 .animx{
     opacity: 0;
     transform: translateX(-120px);
-    animation: moveleft 0.5s linear forwards;
+    animation: moveleft 1s linear forwards;
 }
  @keyframes moveleft{
     100%{
@@ -205,7 +205,7 @@ th,td{
  .anim-x{
     opacity: 0;
     transform: translateX(120px);
-    animation: moveright 0.5s linear forwards;
+    animation: moveright 1s linear forwards;
 }
  @keyframes moveright{
     100%{
