@@ -9,6 +9,7 @@ import { Subscription } from 'rxjs';
 })
 export class AboutComponent{
   fragmentSubscription!: Subscription;
+  skillset:boolean = false;
 constructor(private route: ActivatedRoute, private renderer: Renderer2){
   
 }
@@ -17,7 +18,7 @@ constructor(private route: ActivatedRoute, private renderer: Renderer2){
 ngAfterViewChecked(): void {
   // Check the current fragment in the URL
   const fragment = window.location.hash.replace('#', '');
-  if (fragment === 'about') {
+  if (fragment === 'about' && this.skillset == false) {
     const element = document.getElementById('imgsection');
     const contentelement = document.getElementById('contentsection');
     if (element) {
@@ -30,6 +31,7 @@ ngAfterViewChecked(): void {
 
     }
   }
+  this.skillset = false;
 }
 
 
@@ -47,6 +49,7 @@ projects:boolean = false;
 
 
 aboutCategorySelection(e:Event,category:Number){
+  this.skillset = true;
 if(category == 1){
   this.skills = true;
   this.experience = false;

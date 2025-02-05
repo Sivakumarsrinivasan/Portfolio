@@ -5,7 +5,7 @@
     justify-content: space-evenly;
     width: 100%;
     margin: auto;
-
+ 
 }
  .developername{
     display: flex;
@@ -59,7 +59,8 @@ li a{
 
 }
 li a:hover{
-    background: rgba(128, 128, 128,0.2);
+    background: rgba(128, 128, 128,0.4);
+   
     border-radius: 10px;
 }
 .menu-icon{
@@ -90,7 +91,7 @@ z-index: 1;
      position: absolute;
      overflow: hidden;
      max-height: 0%;
-top: 13%;
+top: 4%;
 left: 0;
 text-align: center;
 /* background: rebeccapurple; */
@@ -111,7 +112,7 @@ text-align: center;
     .menu-icon{
         display: inline-block;
         position: absolute;
-        top: 2%;
+        top: 0.5%;
         right: 5%;
         cursor: pointer;
     }

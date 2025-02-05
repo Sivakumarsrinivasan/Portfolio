@@ -170,6 +170,17 @@ justify-content: center;
         height: 100%;
     }
   }
+  .anim-contact{
+    opacity: 0;
+    transform: translateZ(20px);
+    animation: moveright 1.5s linear forwards;
+}
+ @keyframes moveright{
+    100%{
+        opacity: 2;
+        transform: translateZ(0);
+    }
+ }
 
 
 
