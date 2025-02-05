@@ -30,6 +30,7 @@ margin-left: 5%;
 .contact-bar{
     height: 90%;
     display: flex;
+    transform: translateZ(1px);
 }
 .contact-platform{
     display: flex;

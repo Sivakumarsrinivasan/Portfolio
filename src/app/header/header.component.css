@@ -35,6 +35,7 @@
 .navmenus{
 display: flex;
 align-items: center;
+margin-left: 20%;
 }
 
 .navmenus ul{
@@ -80,6 +81,7 @@ z-index: 1;
     .navmenus{
         margin-top: 15px;
         width: 50%;
+        margin-left: 0;
        
        
     }
