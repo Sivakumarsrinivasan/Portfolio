@@ -28,6 +28,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transform: translateZ(10px);
 }
 
 .about-img-box{
@@ -61,7 +62,7 @@
     background: #fff;;
     bottom: -2px;
     z-index: -1;
-    filter: blur(6px);
+    filter: blur(50px);
     background: linear-gradient(235deg,#89ff00,#060c21,#00bcd4);
 }
 .Developer-img{
