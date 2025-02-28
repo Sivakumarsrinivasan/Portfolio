@@ -82,7 +82,7 @@ img{
 .social-media{
     display: flex;
     justify-content: space-evenly;
-    width: 50%;
+    width: 25%;
     position: relative;
     top: 20px;
 }
@@ -99,6 +99,11 @@ img{
     justify-content: center;
     box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.1);
     border-radius: 50px 50px;
+}
+
+.media:hover{
+    background: rgb(237, 127, 127);
+    transition: 0.5s;
 }
 @keyframes animate{
     0%{

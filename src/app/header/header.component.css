@@ -54,7 +54,7 @@ li{
 
 li a{
     display: inline-block;
-    padding: 10% 15px;
+    padding: 4% 15px;
     text-decoration: none;
     color: black;
     cursor: pointer;
@@ -63,10 +63,11 @@ li a{
     font-weight: 400;
     font-style: normal;
     font-size: 18px;
+   
 }
 li a:hover{
     background: #f53232;
-    border-radius: 40px;
+    border-radius: 10px;
     color: white;
 }
 .menu-icon{
