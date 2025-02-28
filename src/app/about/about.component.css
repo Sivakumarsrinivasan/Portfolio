@@ -17,7 +17,7 @@
 }
 .Intro-para{
     font-size: 16px;
-    font-family: "Roboto", sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 300;
     font-style: normal;
   
@@ -70,8 +70,11 @@
     width: 100%;
     object-fit: cover;
 }
+table{
+    width: 90%;
+}
 table, th, td {
-    border: 1px solid white;
+    border: 1px solid black;
     border-collapse: collapse;
   }
 th,td{
@@ -107,17 +110,21 @@ th,td{
   display: none;
 }
 .content-list{
-    height: 300px;
-    width: 90%;
+    height: 380px;
+    width: 95%;
     overflow: scroll;
     font-size: 14px;
  padding-top: 5%;
- padding-left: 2%;
+ padding-left: 8%;
  padding-right: 2%;
+ padding-bottom: 2%;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: italic;
     transform: translateZ(1px);
+    background: #f5cdcd;
+    border-radius: 30px;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.1);
   
 }
 /* img{

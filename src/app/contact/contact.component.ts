@@ -8,7 +8,7 @@ import { Component, Renderer2 } from '@angular/core';
 export class ContactComponent {
   mail = ''
 constructor(private renderer: Renderer2){
-this.mail = 'sivakumar6242001@gmail.com'
+this.mail = 'ssivakumar.dev@gmail.com'
 }
 
 ngAfterViewChecked(): void {

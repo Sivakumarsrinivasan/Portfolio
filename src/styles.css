@@ -1,14 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
-body{
-    /* background: #212121; */
-    /* background: #143D60; */
-    /* background: #091057; */
-}
+
 .btn{
 cursor: pointer;
 }
 section{
-    background: #000200;
+    background: rgb(242, 237, 242);
     position: relative;
     
     /* height: 100%; */

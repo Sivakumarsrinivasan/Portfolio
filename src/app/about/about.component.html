@@ -23,36 +23,8 @@
              </div>
 
              <div class="content-list">
-                 <div class="skills" *ngIf="skills">
-                    <div>
-                        <p>Time management</p>
-                    <div class="progress" style="width: 50%; height: 6px;">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="40"
-                        aria-valuemin="0" aria-valuemax="70" style="width:100%">
-                          
-                        </div>
-                      </div>
-                    </div>
-
-                    <div style="margin-top: 2%;">
-                        <p>Logical thinking</p>
-                    <div class="progress" style="width: 50%; height: 6px;">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="40"
-                        aria-valuemin="0" aria-valuemax="70" style="width:90%">
-                          
-                        </div>
-                      </div>
-                    </div>
-
-                    <div style="margin-top: 2%;">
-                        <p>problem solving</p>
-                    <div class="progress" style="width: 50%; height: 6px;">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="40"
-                        aria-valuemin="0" aria-valuemax="70" style="width:70%">
-                          
-                        </div>
-                      </div>
-                    </div>
+                 <div class="skills anim" *ngIf="skills">
+               
                     <div style="margin-top: 2%;">
                         <p>Angular</p>
                     <div class="progress" style="width: 50%; height: 6px;">
@@ -108,7 +80,7 @@
                       </div>
                     </div>
                  </div>
-                 <div class="experience" *ngIf="experience">
+                 <div class="experience anim" *ngIf="experience">
                     
 <p>I have over two years of experience with the Angular framework at Revolution Games India Private Limited. <b>[Nov-2022 to Dec-2024] </b></p>
  <ul>
@@ -124,7 +96,7 @@
  </ul>
 
 </div>
-                 <div class="education" *ngIf="education">
+                 <div class="education anim" *ngIf="education">
                    <p> I completed my 10th grade at Sri Sankara vidhyalaya School, pursued my higher secondary education at Sri Ahobila Oriental School, and earned my undergraduate degree from Agurchand Manmull Jain College. </p>
                 <table>
                     <thead>
@@ -152,7 +124,7 @@
                 </table>
                 
                 </div>
-                 <div class="project" *ngIf="projects">
+                 <div class="project anim" *ngIf="projects">
                    <h5>Plannotate 3</h5>
                    <ul>
                     <li>It is a drawing based civil application, that enables user to draw ,plotting annotation , attaching forms and images to the annotations</li>

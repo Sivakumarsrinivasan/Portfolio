@@ -1,70 +1,84 @@
-.contact-page{
-    
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&display=swap');
+
+.contact-page {
+
     height: 100vh;
 }
 
-.title{
+.title {
     text-align: center;
 }
 
-.mail{
+.mail {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: white;
+    color: black;
     width: 100%;
 }
-.phone{
+
+.phone {
     display: flex;
     align-items: center;
-    
-    color: white;
+
+    color: black;
     width: 100%;
 }
-.mail-name{
+
+.mail-name {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     margin-left: 5%;
 }
-.number{
-margin-left: 5%;
+
+.number {
+    margin-left: 5%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
-.contact-bar{
+
+.contact-bar {
     height: 90%;
     display: flex;
     transform: translateZ(1px);
 }
-.contact-platform{
+
+.contact-platform {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     height: 30%;
     margin-top: 5%;
-    
+
 }
-.contact-source{
+
+.contact-source {
     position: relative;
     top: 5%;
     display: flex;
     flex-direction: column;
-  
+
     align-items: center;
-     width: 50%;
-     height: 100%;
-     padding-top: 5%;
+    width: 50%;
+    height: 100%;
+    padding-top: 5%;
 }
 
-.mailname{
+.mailname {
     padding-top: 2%;
 }
 
-.contact-form{
-display: flex;
-flex-direction: column;
-align-items: center;
-width: 50%;
-height: 100%;
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 100%;
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -73,38 +87,44 @@ form{
     /* background: green; */
     height: 45%;
     margin-top: 10%;
- }
+}
 
-.contact-form .inputbox{
+.contact-form .inputbox {
     width: 100%;
 }
-input , textarea{
+
+input,
+textarea {
     width: 100%;
-    color:white
+    color: black
 }
-.inputbox{
-    border: 1px solid white;
+
+.inputbox {
+    border: 1px solid black;
     background: transparent;
     border-radius: 17px;
     padding: 1.5%;
 }
-.textbox{
-   border: none;
-   outline: none;
-   background: transparent;
+
+.textbox {
+    border: none;
+    outline: none;
+    background: transparent;
 }
 
-.inputbox{
-    border: 1px solid white;
+.inputbox {
+    border: 1px solid black;
     background: transparent;
     border-radius: 17px;
     padding: 2.5%;
 }
-.inputbox1{
+
+.inputbox1 {
     width: 100%;
 }
-.textarea{
-    border: 1px solid white;
+
+.textarea {
+    border: 1px solid black;
     background: transparent;
     border-radius: 11px;
     height: 120px;
@@ -113,77 +133,79 @@ input , textarea{
     padding-top: 2px;
 }
 
-.btn{
-    color: white;
-    border: 1px solid white;
+.btn {
+    color: black;
+    border: 1px solid black;
     width: 40%;
     border-radius: 20px;
     cursor: pointer;
     /* border-radius: ; */
 }
 
-.btn:hover{
+.btn:hover {
     cursor: pointer;
     background: green;
 }
+
 ::placeholder {
-    color: white;
+    color: black;
     opacity: 1;
     /* Firefox */
-  }
-  @media (max-width:1026){
-    
-   form{
-    width: 70%;
-    height: 52%;
-   }
 }
 
-  @media (max-width: 770px){
+@media (max-width:1026) {
+
+    form {
+        width: 70%;
+        height: 52%;
+    }
+}
+
+@media (max-width: 770px) {
     /* .contact-page{
         margin-top: 70%;
     } */
 
-    .contact-bar{
+    .contact-bar {
         flex-direction: column;
         align-items: center;
     }
-    .contact-form{
+
+    .contact-form {
         width: 100%;
         display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         flex-direction: row;
     }
- 
-    form{
+
+    form {
         width: 58%;
         height: 94%;
     }
-    .contact-platform{
+
+    .contact-platform {
         height: 50%;
     }
-  }
-  @media(max-width:448px){
-    form{
+}
+
+@media(max-width:448px) {
+    form {
         width: 90%;
         height: 100%;
     }
-  }
-  .anim-contact{
+}
+
+.anim-contact {
     opacity: 0;
     transform: translateZ(20px);
     animation: moveright 1.5s linear forwards;
 }
- @keyframes moveright{
-    100%{
+
+@keyframes moveright {
+    100% {
         opacity: 2;
         transform: translateZ(0);
     }
- }
-
-
-
-
-
+}
