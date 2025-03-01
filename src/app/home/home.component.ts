@@ -16,5 +16,8 @@ export class HomeComponent {
     //   console.log(res)
     // })
     }
+    navigate(){
+      window.open("https://www.linkedin.com/in/siva-kumar-9b9501213")
+    }
 
 }

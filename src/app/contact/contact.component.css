@@ -88,12 +88,13 @@ form {
     /* background: green; */
     height: 45%;
    
-    gap: 5px;
+    gap: 10px;
 }
 .form-detail{
     width: 83%;
     height: 75%;
-    background: #f5cdcd;
+    /* #f5cdcd; */
+    background: rgb(236, 228, 228);
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     display: flex;
     justify-content: center;
@@ -116,10 +117,14 @@ textarea {
 }
 
 .inputbox {
+   
     border: 1px solid black;
     background: transparent;
     border-radius: 17px;
     padding: 1.5%;
+    border: none;
+    /* background: #f7b9b9; */
+    background: #eacbcb;
 }
 
 .textbox {
@@ -133,34 +138,47 @@ textarea {
     background: transparent;
     border-radius: 17px;
     padding: 2.5%;
+    border: none;
+    background: #eacbcb;
 }
 
 .inputbox1 {
     width: 100%;
+    border: none;
+    border-radius: 17px;
+    /* background: #f7b9b9; */
+    background: #eacbcb;;
+    
 }
 
 .textarea {
-    border: 1px solid black;
+    border: none;
     background: transparent;
     border-radius: 11px;
     height: 120px;
     width: 100%;
     padding-left: 15px;
     padding-top: 2px;
+    outline: none;
+    resize: none;
 }
 
-.btn {
+.btn1 {
     color: black;
-    border: 1px solid black;
+   outline: none;
+   border: none;
+    background: #f7b9b9;
     width: 40%;
     border-radius: 20px;
     cursor: pointer;
+    box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.1);
     /* border-radius: ; */
 }
 
-.btn:hover {
+.btn1:hover {
     cursor: pointer;
     background: green;
+    color: white;
 }
 
 ::placeholder {
