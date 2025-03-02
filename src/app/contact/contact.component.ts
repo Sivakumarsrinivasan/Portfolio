@@ -1,5 +1,5 @@
 import { Component, Renderer2 } from '@angular/core';
-
+import emailjs from '@emailjs/browser';
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
@@ -24,5 +24,19 @@ ngAfterViewChecked(): void {
 
     }
   }
+}
+
+sendEmail(event: Event) {
+  debugger
+event.preventDefault();
+  emailjs.sendForm("service_e97jy66", 'template_pws7zfs', event.target as HTMLFormElement, 'tFhDUhAHcj9S8O2lI')
+    .then((response) => {
+      console.log('Email sent successfully!', response);
+      alert('Email sent successfully!');
+    })
+    .catch((error) => {
+      console.error('Error sending email:', error);
+      alert('Failed to send email.');
+    });
 }
 }
