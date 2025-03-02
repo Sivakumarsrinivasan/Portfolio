@@ -73,8 +73,11 @@
 table{
     width: 90%;
 }
+th{
+    color: #e58b11;
+}
 table, th, td {
-    border: 1px solid black;
+    border: 1px solid white;
     border-collapse: collapse;
   }
 th,td{
@@ -122,7 +125,7 @@ th,td{
     font-weight: 400;
     font-style: italic;
     transform: translateZ(1px);
-    background: #f5cdcd;
+    background: #1b192c;
     border-radius: 30px;
     box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.1);
   
@@ -170,18 +173,18 @@ gap: 15px;
 .skill{
     display: flex;
     justify-content: space-evenly;
-    flex-direction: column;
+    
     align-items: center;
     box-shadow: 10px 10px 4px -6px rgba(0, 0, 0, 0.75);
     /* box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); */
     width: 95%;
-    background: #fca2a2;
+    background: #19375d;
     height: 145px;
     border-radius: 20px;
 }
 .skill-logo{
     height: 79px;
-    width: 71px;
+    width: 55px;
 }
 @media (max-width: 1024px){
     .about-img-box{

@@ -4,7 +4,8 @@
 cursor: pointer;
 }
 section{
-    background: rgb(242, 237, 242);
+    /* background: rgb(242, 237, 242); */
+    background: #181C21;
     position: relative;
     
     /* height: 100%; */
