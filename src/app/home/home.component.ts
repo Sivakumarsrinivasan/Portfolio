@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 import { AboutComponent } from '../about/about.component';
 import { ActivatedRoute } from '@angular/router';
 
@@ -12,10 +12,14 @@ export class HomeComponent {
 
   }
   ngOninit(){
-    // this.route.fragment.subscribe(res=>{
-    //   console.log(res)
-    // })
+   
     }
+    isSmallScreen: boolean = window.innerWidth < 651; // Adjust breakpoint as needed
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    this.isSmallScreen = event.target.innerWidth < 651;
+  }
     navigate(){
       window.open("https://www.linkedin.com/in/siva-kumar-9b9501213")
     }
