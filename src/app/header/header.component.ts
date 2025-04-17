@@ -8,28 +8,17 @@ import { ActivatedRoute, Route, Router } from '@angular/router';
 })
 export class HeaderComponent {
 
-developername:string = ''; 
-fonticonenable = true;
-@Output() scrollToAbout = new EventEmitter<void>();
-constructor(private router: Router,private route:ActivatedRoute){
-this.developername = "Sivakumar"
-}
-ngOninit(){
-  this.route.fragment.subscribe(res=>{
-    console.log(res)
-  })
+
+  fonticonenable = false;
+
+  constructor(private router: Router, private route: ActivatedRoute) {
+  }
+  ngOninit() {
+
   }
 
-enable(){
-  debugger
- document.getElementById("headermenus")?.classList.remove("inactive")
- document.getElementById("headermenus")?.classList.add("active")
-this.fonticonenable = false;
-  
-}
-disable(){
-  document.getElementById("headermenus")?.classList.remove("active")
-  document.getElementById("headermenus")?.classList.add("inactive")
-this.fonticonenable = true;
-}
+  enable() {
+    this.fonticonenable = !this.fonticonenable;
+  }
+
 }
