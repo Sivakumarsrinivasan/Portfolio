@@ -17,8 +17,8 @@ ngOnInit(): void {
 }
 
 
-skills:boolean = true;;
-experience:boolean = false;
+skills:boolean = false;
+experience:boolean = true;
 education:boolean = false;
 
 
