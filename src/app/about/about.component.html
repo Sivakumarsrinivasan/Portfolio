@@ -1,67 +1,72 @@
-<div class="main" id="aboutsection">
-    <div class="about">
-       
-        <div class="about-img">
-            <div class="about-img-box">
-                
-                   <img class="Developer-img" src="/assets/siva.jpg">
-        
-                
-            </div>
-    
-        </div> 
-        <div class="content">
-            <h3>About me</h3>
-            <br/>
-            <p class="m-2 Intro-para"> 
-                Hi, I’m Sivakumar. I specialize in creating dynamic and responsive web applications that not only meet client requirements but also ensure user satisfaction.</p>
-             <div class="tab-titles ">
-                <p class="tab-links about-active" (click)="aboutCategorySelection($event,1)">Skills</p>
-                <p class="tab-links" (click)="aboutCategorySelection($event,2)">Experience</p>
-                <p class="tab-links" (click)="aboutCategorySelection($event,3)">Education</p>
-             </div>
 
-             <div class="content-list">
-                 <div class="skills" *ngIf="skills">
-                    <div>
-                        <p>Time management</p>
-                    <div class="progress" style="width: 50%; height: 6px;">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="40"
-                        aria-valuemin="0" aria-valuemax="70" style="width:100%">
-                          
-                        </div>
-                      </div>
-                    </div>
-
-                    <div style="margin-top: 2%;">
-                        <p>Logical thinking</p>
-                    <div class="progress" style="width: 50%; height: 6px;">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="40"
-                        aria-valuemin="0" aria-valuemax="70" style="width:90%">
-                          
-                        </div>
-                      </div>
-                    </div>
-
-                    <div style="margin-top: 2%;">
-                        <p>problem solving</p>
-                    <div class="progress" style="width: 50%; height: 6px;">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="40"
-                        aria-valuemin="0" aria-valuemax="70" style="width:70%">
-                          
-                        </div>
-                      </div>
-                    </div>
-                 </div>
-                 <div class="experience" *ngIf="experience">
+<section id="About">
+    <div class="main" >
+      
+        <div class="about-title">  <h2>About me</h2></div>
+        <div class="about">
+           
+            <div class="about-img">
+                <div class="about-img-box">
                     
-I have over two years of experience with the Angular framework at Revolution Games India Private Limited.
+                       <img class="Developer-img" src="/assets/siva_homepage.jpeg">
+            
+                    
+                </div>
+        
+            </div> 
+            <div class="content">
+               
+                <br/>
+                <p class="m-2 Intro-para"> 
+                    Hi, I’m Sivakumar. I specialize in creating dynamic and responsive web applications that not only meet client requirements but also ensure user satisfaction.</p>
+                 <div class="tab-titles ">
+                    <p class="tab-links about-active" (click)="aboutCategorySelection($event,1)">Skills</p>
+                    <p class="tab-links" (click)="aboutCategorySelection($event,2)">Experience</p>
+                    <p class="tab-links" (click)="aboutCategorySelection($event,3)">Education</p>
                  </div>
-                 <div class="education" *ngIf="education">
-                    I completed my 10th grade at Sri Sankara vidhyalaya School, pursued my higher secondary education at Sri Ahobila Oriental School, and earned my undergraduate degree from Agurchand Manmull Jain College. 
+    
+                 <div class="content-list">
+                     <div class="skills" *ngIf="skills">
+                        <div>
+                            <p>Time management</p>
+                        <div class="progress" style="width: 50%; height: 6px;">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="40"
+                            aria-valuemin="0" aria-valuemax="70" style="width:100%">
+                              
+                            </div>
+                          </div>
+                        </div>
+    
+                        <div style="margin-top: 2%;">
+                            <p>Logical thinking</p>
+                        <div class="progress" style="width: 50%; height: 6px;">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="40"
+                            aria-valuemin="0" aria-valuemax="70" style="width:90%">
+                              
+                            </div>
+                          </div>
+                        </div>
+    
+                        <div style="margin-top: 2%;">
+                            <p>problem solving</p>
+                        <div class="progress" style="width: 50%; height: 6px;">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="40"
+                            aria-valuemin="0" aria-valuemax="70" style="width:70%">
+                              
+                            </div>
+                          </div>
+                        </div>
+                     </div>
+                     <div class="experience" *ngIf="experience">
+                        
+    I have over two years of experience with the Angular framework at Revolution Games India Private Limited.
+                     </div>
+                     <div class="education" *ngIf="education">
+                        I completed my 10th grade at Sri Sankara vidhyalaya School, pursued my higher secondary education at Sri Ahobila Oriental School, and earned my undergraduate degree from Agurchand Manmull Jain College. 
+                     </div>
                  </div>
-             </div>
-          
-        </div> 
-       </div> 
-</div>
+              
+            </div> 
+           </div> 
+    </div>
+</section>

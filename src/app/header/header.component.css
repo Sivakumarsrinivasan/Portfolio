@@ -12,6 +12,7 @@
     color: white;
 }
 
+
 .header-menus ul {
 
     list-style: none;
@@ -25,7 +26,7 @@
 
 .header-menus ul li a {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
     color: #c9c9c9;
 }
 
@@ -34,7 +35,7 @@
     transition: 0.5s;
 }
 .close{
-    height: 85px;
+    height: 80px;
     transition: 0.5s;
 }
 .header-icon{
@@ -61,6 +62,7 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
+       
     }
 }
 

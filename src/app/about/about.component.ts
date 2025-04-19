@@ -15,12 +15,7 @@ ngOnInit(): void {
   // Subscribe to fragment changes
 
 }
-scrollToSection() {
-  const element = document.getElementById('aboutsection');
-  if (element) {
-    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }
-}
+
 
 skills:boolean = true;;
 experience:boolean = false;

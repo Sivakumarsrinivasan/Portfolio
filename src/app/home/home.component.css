@@ -4,5 +4,108 @@
     background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('/assets/background.jpg');
     background-size: cover ;
     background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main .content{
+    color: aliceblue;
+    width: 50%;
+    display: flex
+;
+    flex-direction: column;
+    align-items: center;
+}
 
+.content .c1 , .content .c2, content .c3{
+font-size: 20px;
+font-family: "Roboto Condensed", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+.content .name{
+    font-size: 45px;
+    font-weight: bold;
+    color: aqua;
+}
+span{
+    color: blanchedalmond;
+    font-weight: bold;
+}
+.btn{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin-top: 2%;
+}
+.btn1{
+    background: orangered;
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    height: 35px;
+    width: 120px;
+    box-shadow: 0 2px 5px #0000001a;
+    cursor: pointer;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    text-decoration: none;
+}
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    .main .content{
+    
+        width: 100%;
+    
+    }
+    .content .c1 , .content .c2{
+        font-size: 15px;
+        }
+        .content .name{
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .btn{
+            display: flex;
+            justify-content: space-around;
+            width: 90%;
+            margin-top: 2%;
+        }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .btn{
+        display: flex;
+        justify-content: space-around;
+        width: 90%;
+        margin-top: 2%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .btn{
+        display: flex;
+        justify-content: space-around;
+        width: 60%;
+        margin-top: 2%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
 }
