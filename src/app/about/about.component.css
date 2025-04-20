@@ -1,7 +1,8 @@
 
 
 .main{
-    height: 100vh;  
+    height: 100vh; 
+   
     
 }
 .about{
@@ -49,7 +50,7 @@
     justify-content: center;
     background: #060c21;  
 
- z-index: -1;
+
 }
 
 .about-img-box:before{
@@ -177,6 +178,7 @@
     padding: 2%;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
 }
 .education-content::before{
     position: absolute;
@@ -207,6 +209,21 @@
     }
     .tab-titles{
         padding-left: 5%;
+    }
+    .education{
+        margin-left: 20px;
+    }
+    .education-content{
+        width: 50%;
+    }
+}
+
+@media (max-width:600px){
+    .education{
+        margin-left: 20px;
+    }
+    .education-content{
+        width: 80%;
     }
 }
 

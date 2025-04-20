@@ -10,6 +10,7 @@
     position: fixed;
     background: transparent;
     color: white;
+    z-index: 1;
 }
 
 
@@ -27,6 +28,12 @@
 .header-menus ul li a {
     text-decoration: none;
     font-size: 16px;
+ 
+}
+.link-color{
+    color: black;
+}
+.non-link-color{
     color: #c9c9c9;
 }
 
@@ -40,6 +47,14 @@
 }
 .header-icon{
     display: none;
+}
+.header-color{
+    background: white;
+    color: black;
+}
+.non-header-color{
+    background: transparent;
+    
 }
 /* Extra small devices (phones, 600px and down) */
 

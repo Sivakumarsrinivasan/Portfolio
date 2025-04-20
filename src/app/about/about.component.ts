@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { AfterViewChecked, AfterViewInit, Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
 
@@ -7,14 +7,21 @@ import { Subscription } from 'rxjs';
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.css']
 })
-export class AboutComponent {
+export class AboutComponent implements AfterViewInit {
   fragmentSubscription!: Subscription;
 constructor(private route: ActivatedRoute){}
+  ngAfterViewInit(): void {
+    console.log("hi");
+  }
+
 
 ngOnInit(): void {
   // Subscribe to fragment changes
+ 
+  
 
 }
+
 
 
 skills:boolean = false;
