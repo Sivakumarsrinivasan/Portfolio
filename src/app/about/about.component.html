@@ -19,62 +19,55 @@
                 <br/>
                 <p class="m-2 Intro-para" style="opacity: 0.7;"> 
                     Hi, I’m Sivakumar. I specialize in creating dynamic and responsive web applications that not only meet client requirements but also ensure user satisfaction.</p>
-                <h4 style="color: #007bff; margin-left: 25%;">My Journey</h4>
+                <h4 style="color: #007bff; margin-left: 35%;">My Journey</h4>
                     <div class="tab-titles ">
                     <p class="tab-links" (click)="aboutCategorySelection($event,2)">Experience</p>
                     <p class="tab-links" (click)="aboutCategorySelection($event,3)">Education</p>
                  </div>
-    <div *ngIf="this.education" class="education">
-        <div class="education-content m-2">
-            <div class="calender">
-                <i class="fa fa-calendar"></i>
-                <p>2017</p>
+    <div class="inner-content">
+        <div *ngIf="this.education" class="education">
+            <div class="education-content m-2">
+                <div class="calender">
+                    <i class="fa fa-calendar"></i>
+                    <p>2017</p>
+                </div>
+             
+                <h5>SSLC - Sri Sankara Vidhyalaya</h5>
+                <p>Completed till 10th with the percentage of 85%</p>
             </div>
-         
-            <h5>SSLC - Sri Sankara Vidhyalaya</h5>
-            <p>Completed till 10th with the percentage of 85%</p>
+            <div class="education-content m-2">
+                <div class="calender">
+                    <i class="fa fa-calendar"></i>
+                    <p>2017-2019</p>
+                </div>
+                <h5>HSLC - Sri Ahoblia Math oriental</h5>
+                <p>Completed till 11th and 12 th with the percentage of 75%</p>
+            
+            </div>
+            <div class="education-content m-2">
+                <div class="calender">
+                    <i class="fa fa-calendar"></i>
+                    <p>2019-2022</p>
+                </div>
+                <h5>Agurchand Manmull Jain College</h5>
+                <p>Completed Bachelors degree in Computer science with the percentage of 85%</p>
+            </div>
         </div>
-        <div class="education-content m-2">
-            <div class="calender">
-                <i class="fa fa-calendar"></i>
-                <p>2017-2019</p>
+        <div *ngIf="this.experience" class="education">
+            <div class="education-content m-2">
+                <div class="calender">
+                    <i class="fa fa-calendar"></i>
+                    <p>Nov 2022 - Dec 2024</p>
+                </div>
+                <h5>Revolution Games India Private Limited - Software Developer</h5>
+                <p>I have over two years of experience with the Angular framework at Revolution Games India Private Limited. </p>
+              
             </div>
-            <h5>HSLC - Sri Ahoblia Math oriental</h5>
-            <p>Completed till 11th and 12 th with the percentage of 75%</p>
-        
-        </div>
-        <div class="education-content m-2">
-            <div class="calender">
-                <i class="fa fa-calendar"></i>
-                <p>2019-2022</p>
-            </div>
-            <h5>Agurchand Manmull Jain College</h5>
-            <p>Completed Bachelors degree in Computer science with the percentage of 85%</p>
+          
+    
         </div>
     </div>
-    <div *ngIf="this.experience" class="education">
-        <div class="education-content m-2">
-            <div class="calender">
-                <i class="fa fa-calendar"></i>
-                <p>Nov 2022 - Dec 2024</p>
-            </div>
-            <h5>Revolution Games India Private Limited - Software Developer</h5>
-            <p>I have over two years of experience with the Angular framework at Revolution Games India Private Limited. </p>
-            <ul>
-               <li>Expertise in Angular, Life Cycle Hooks, CLI, Routing, Subjects</li>
-               <li>Experienced in integrating API with Front-end Framework</li>
-               <li>Skilled in performing optimization and debugging using native
-                   browser developer tools</li>
-               <li>Basic knowledge of SQL Queries</li>
-               <li>Understanding the basics of writing cases in a Spec file</li>
-               <li>Excellent Communication and team work skills</li>
-               <li>Attended daily status meeting with develpoment and management
-                   team</li>
-            </ul>
-        </div>
-      
-
-    </div>
+ 
                
               
             </div> 

@@ -1,6 +1,6 @@
 .career-main{
     height: 100vh;
-    margin-top: 25%;
+    /* margin-top: 15%; */
     padding-top: 5%;
 }
 .heading h2, .heading h4{
@@ -20,3 +20,120 @@
     width: 50%;
     height: 100%;
 }
+.skill-card-section{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    padding-top: 10%;
+    gap: 10%;
+    padding-right: 5%;
+}
+.skill-card1, .skill-card2, .skill-card3{
+    width: 100%;
+    height: auto;
+    background: #f8f9fa;
+    /* background: #f8f9fa; */
+    border-radius: 20px;
+  
+}
+
+.progress1{
+    padding: 1rem 0;
+}
+
+h6{
+ 
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 14%;
+}
+
+.progress1 .bar{
+    height: 5px;
+    border-radius: .6rem;
+    border: 1px solid black;
+    padding: 4px;
+    position: relative;
+    width: 80%;
+    margin-left: 14%;
+}
+
+
+.progress1 .bar span{
+    position: absolute;
+    display: block;
+    /* height: 100%; */
+    padding: 2px;
+    bottom: 2px;
+    border-radius: 2px;
+   
+}
+.skill-card1 .progress1 .bar span{
+    background: #ff004f;
+}
+.skill-card2 .progress1 .bar span{
+    background: goldenrod;
+}
+.skill-card3 .progress1 .bar span{
+    background: blueviolet;
+}
+
+.skill-card1 h5 , .skill-card2 h5, .skill-card3 h5{
+    text-decoration: underline;
+    margin-left: 25%;
+}
+.skill-card1 .progress1:nth-of-type(1) .bar span {
+    /* First progress bar (HTML) */
+    width: 90%;
+    
+  }
+.skill-card1 .progress1:nth-of-type(2) .bar span {
+    /* First progress bar (HTML) */
+    width: 80%;
+  }
+.skill-card1 .progress1:nth-of-type(3) .bar span {
+    /* First progress bar (HTML) */
+    width: 50%;
+  }
+.skill-card1 .progress1:nth-of-type(4) .bar span {
+    /* First progress bar (HTML) */
+    width: 70%;
+  }
+.skill-card1 .progress1:nth-of-type(5) .bar span {
+    /* First progress bar (HTML) */
+    width: 95%;
+  }
+
+  .skill-card2 .progress1:nth-of-type(1) .bar span {
+    /* First progress bar (HTML) */
+    width: 45%;
+  }
+  .skill-card2 .progress1:nth-of-type(2) .bar span {
+    /* First progress bar (HTML) */
+    width: 60%;
+  }
+
+  .skill-card3 .progress1:nth-of-type(1) .bar span {
+    /* First progress bar (HTML) */
+    width: 94%;
+  }
+  .skill-card3 .progress1:nth-of-type(2) .bar span {
+    /* First progress bar (HTML) */
+    width: 90%;
+  }
+  .skill-card3 .progress1:nth-of-type(3) .bar span {
+    /* First progress bar (HTML) */
+    width: 90%;
+  }
+  .skill-card3 .progress1:nth-of-type(4) .bar span {
+    /* First progress bar (HTML) */
+    width: 90%;
+  }
+
+  @media (max-width:600px){
+    .career-main{
+        margin-top: 25%;
+    }
+  }

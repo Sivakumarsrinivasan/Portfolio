@@ -1,4 +1,4 @@
-<div class="header" [ngClass]="this.isScrolled ? 'header-color':'non-header-color'" [ngClass]="this.fonticonenable ?'open':'close'">
+<div class="header"  [ngClass]="[this.fonticonenable ?'open':'close', this.isScrolled ? 'header-color':'non-header-color']">
 <div class="name" ><h2>S.Sivakumar</h2>
     <div class="header-icon" (click)="enable()">
         <i  [ngClass]="this.fonticonenable ? ['fa','fa-times'] : ['fa','fa-bars'] "></i>
@@ -9,7 +9,7 @@
     <ul>
         <li><a href="#" [ngClass]="this.isScrolled ? 'link-color':'non-link-color'">Home</a></li>
         <li><a href="#About" [ngClass]="this.isScrolled ? 'link-color':'non-link-color'">About</a></li>
-        <li><a href="#Carrier" [ngClass]="this.isScrolled ? 'link-color':'non-link-color'">Carrier</a></li>
+        <li><a href="#Carrier" [ngClass]="this.isScrolled ? 'link-color':'non-link-color'">Careers</a></li>
         <li><a href="#Contact" [ngClass]="this.isScrolled ? 'link-color':'non-link-color'">Contact</a></li>
     </ul>
 </div>
