@@ -8,7 +8,7 @@ import emailjs from 'emailjs-com';
 export class ContactComponent {
   mail = ''
 constructor(){
-this.mail = 'sivakumar6242001@gmail.com'
+this.mail = 'ssivakumar.dev@gmail.com'
 }
 
 
