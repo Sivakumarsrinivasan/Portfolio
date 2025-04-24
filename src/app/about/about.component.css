@@ -16,6 +16,10 @@
     align-items: center;
     justify-content: center;
     color: #007bff;
+    
+}
+
+.about-title h2{
     font-weight: bold;
 }
  .content{

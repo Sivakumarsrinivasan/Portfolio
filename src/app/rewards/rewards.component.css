@@ -1,0 +1,40 @@
+.rewards-main{
+    height: 100vh;
+    margin-top: 10%;
+    width: 100%;
+}
+.heading h2, .heading h4{
+    color: #007bff;
+    text-align: center;
+}
+.heading h2{
+    font-weight: bold;
+}
+p{
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+span{
+font-weight: bold;
+}
+.img-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.img-container .img{
+    width: 30%;
+    height: 50%;
+    padding: 10px;
+    background: #e6e6e6;
+    border-radius: 10px;
+   
+}
+.img img{
+    height: 100%;
+    width: 100%;
+}

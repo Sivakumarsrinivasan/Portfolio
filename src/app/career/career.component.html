@@ -2,7 +2,47 @@
     <div class="career-main">
         <div class="heading"><h2>Careers</h2></div>
 <div class="career-content">
-    <div class="project"> <div class="heading"><h4>My Projects</h4></div></div>
+    <div class="project"> 
+        <div class="heading"><h4>My Projects</h4></div>
+
+<div class="career-section">
+
+      <div class="career-container">
+        <div class="slider-wrapper">
+            <div class="career-track" [style.transform]="'translateX(-' + currentIndex * 100 + '%)'">
+                <div class="career-list" *ngFor="let item of items">
+                    <div class="img-container">
+        <img [src]="item.img">
+                    </div>
+                    <h4 style="margin-top: 2%; color: orangered; font-weight: bold; font-style: italic;">{{item.heading}}</h4>
+                    <div class="img-content">
+<ul>
+    <li *ngFor="let item1 of item.content">{{item1}}</li>
+</ul>
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+        <div class="arrow">
+            <button (click)="prev()"><i class="fa fa-arrow-left" ></i></button>
+            <button (click)="next()"> <i class="fa fa-arrow-right"></i></button>
+            
+           
+            
+        </div>
+        
+        
+      </div>
+      
+      <!-- <div class="slider-controls">
+        <button (click)="prev()">Prev</button>
+        <button (click)="next()">Next</button>
+      </div> -->
+      
+</div>
+
+</div>
     <div class="skills">
     <div class="heading"><h4>My Skills</h4>   
     </div>

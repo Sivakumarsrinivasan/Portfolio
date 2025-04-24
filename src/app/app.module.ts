@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { CareerComponent } from './career/career.component';
+import { RewardsComponent } from './rewards/rewards.component';
 
 
 
@@ -18,7 +19,8 @@ import { CareerComponent } from './career/career.component';
     HomeComponent,
     AboutComponent,
     ContactComponent,
-    CareerComponent
+    CareerComponent,
+    RewardsComponent
   ],
   imports: [
     BrowserModule,
