@@ -169,13 +169,14 @@ textarea {
 }
 
 .btn1 {
-    color: black;
+    color: white;
+    padding: 2%;
    outline: none;
    border: none;
    font-size: 14px;
-    background: #f7b9b9;
+    background: orangered;
     width: 30%;
-    border-radius: 20px;
+    border-radius: 10px;
     cursor: pointer;
     box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.1);
     /* border-radius: ; */
