@@ -57,6 +57,25 @@ span{
     text-decoration: none;
 }
 
+.social-media{
+    display: flex;
+    width: 15%;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+.media{
+    background: goldenrod;
+    /* padding: 23px; */
+    border-radius: 63px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    cursor: pointer;
+}
+
 /* Extra small devices (phones, 600px and down) */
 
 @media only screen and (max-width: 600px) {
