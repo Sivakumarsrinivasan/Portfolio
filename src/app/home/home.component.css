@@ -87,6 +87,13 @@ span{
             width: 90%;
             margin-top: 2%;
         }
+        
+        .social-media{
+            display: flex;
+            width: 20%;
+            justify-content: space-between;
+            margin-top: 5%;
+        }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
