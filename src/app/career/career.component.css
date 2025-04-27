@@ -246,6 +246,12 @@ h6{
     .career-main{
         margin-top: 25%;
     }
+    .img-content{
+      font-size: 12px;
+    }
+    .career-container{
+      height: 752px;
+    }
     .career-content{
       display: flex;
       flex-direction: column;
