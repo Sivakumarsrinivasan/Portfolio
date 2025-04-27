@@ -11,9 +11,19 @@
     backdrop-filter: blur(5px);
     color: white;
     z-index: 1;
+    animation: zoom 2s ease-in-out;
 }
 
-
+@keyframes zoom{
+    0%{
+        opacity: 0;
+        transform: translateZ(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateZ(0px);
+    }
+}
 .header-menus ul {
 
     list-style: none;

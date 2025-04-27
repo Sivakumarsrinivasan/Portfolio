@@ -1,11 +1,29 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-career',
   templateUrl: './career.component.html',
   styleUrls: ['./career.component.css']
 })
-export class CareerComponent {
+export class CareerComponent  {
+  isscrolled = false;
+
+  constructor(private el: ElementRef){
+
+  }
+  @HostListener('window :scroll')
+  onwindowscroll(){
+    const elementTop = this.el.nativeElement.offsetTop;
+    const scrollPosition = window.pageYOffset + window.innerHeight;
+  
+    if (scrollPosition > elementTop + 100) {
+  this.isscrolled = true;
+  
+    }else{
+      this.isscrolled = false
+    }
+    
+  }
   items = [{
     img:'assets/P3.jpeg',
     heading:'Plannotate3',

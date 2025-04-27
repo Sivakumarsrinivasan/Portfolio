@@ -1,4 +1,4 @@
-import { AfterViewChecked, AfterViewInit, Component } from '@angular/core';
+import { AfterViewChecked, AfterViewInit, Component, ElementRef, HostListener } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
 
@@ -7,21 +7,34 @@ import { Subscription } from 'rxjs';
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.css']
 })
-export class AboutComponent implements AfterViewInit {
+export class AboutComponent  {
   fragmentSubscription!: Subscription;
-constructor(private route: ActivatedRoute){}
-  ngAfterViewInit(): void {
-    console.log("hi");
-  }
+constructor(private route: ActivatedRoute, private el: ElementRef){
+
+}
+
+ 
 
 
 ngOnInit(): void {
   // Subscribe to fragment changes
- 
-  
 
 }
+isscrolled = false;
 
+@HostListener('window :scroll')
+onwindowscroll(){
+  const elementTop = this.el.nativeElement.offsetTop;
+  const scrollPosition = window.pageYOffset + window.innerHeight;
+
+  if (scrollPosition > elementTop + 100) {
+this.isscrolled = true;
+
+  }else{
+    this.isscrolled = false
+  }
+  
+}
 
 
 skills:boolean = false;

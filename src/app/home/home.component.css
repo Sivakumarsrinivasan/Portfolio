@@ -6,6 +6,7 @@
 ;
     flex-direction: column;
     align-items: center;
+    animation: zoom 2s ease-in-out;
 }
 
 .content .c1 , .content .c2, content .c3{
@@ -66,6 +67,16 @@ span{
     cursor: pointer;
 }
 
+@keyframes zoom{
+    from{
+        opacity: 0;
+        transform: translateZ(-50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateZ(0px);
+    }
+}
 /* Extra small devices (phones, 600px and down) */
 
 @media only screen and (max-width: 600px) {
