@@ -8,6 +8,7 @@ import emailjs from 'emailjs-com';
 export class ContactComponent {
   mail = ''
   isscrolled = false;
+  content = false;
   constructor(private el:ElementRef) {
     this.mail = 'ssivakumar.dev@gmail.com'
   }
@@ -30,11 +31,10 @@ export class ContactComponent {
     emailjs.sendForm("service_e97jy66", 'template_pws7zfs', event.target as HTMLFormElement, 'tFhDUhAHcj9S8O2lI')
       .then((response) => {
         console.log('Email sent successfully!', response);
-        alert('Email sent successfully!');
+         this.content = true;
       })
       .catch((error) => {
         console.error('Error sending email:', error);
-        alert('Failed to send email.');
       });
   }
   navigateto() {
